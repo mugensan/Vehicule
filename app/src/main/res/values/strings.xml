@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AssignementWeek2</string>
+    <string name="choose_you_vehicule">Choose you vehicule</string>
+    <string name="please_choose_your_car">Please choose your car</string>
+    <string name="cars">CARS</string>
+    <string name="bikes">BIKES</string>
+    <string name="yamaha">YAMAHA</string>
+    <string name="aston_martin">ASTON MARTIN</string>
+    <string name="ktm">KTM</string>
+    <string name="ferrari">FERRARI</string>
+</resources>

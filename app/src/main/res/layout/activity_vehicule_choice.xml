@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_fb"
+    tools:context=".VehiculeChoice">
+
+    <EditText
+        android:id="@+id/et_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/please_choose_your_car"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_cars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+
+        android:text="@string/cars"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/et_greeting"
+        app:layout_constraintTop_toBottomOf="@+id/et_greeting" />
+
+    <EditText
+        android:id="@+id/et_bikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/bikes"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/et_greeting"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/et_cars"
+        app:layout_constraintTop_toBottomOf="@+id/et_greeting" />
+
+    <Button
+        android:id="@+id/btn_yamaha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/yamaha"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ktm"
+        app:layout_constraintStart_toStartOf="@+id/btn_ktm"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ktm" />
+
+    <Button
+        android:id="@+id/btn_aston_martin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/aston_martin"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ferrari"
+        app:layout_constraintStart_toStartOf="@+id/btn_ferrari"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ferrari" />
+
+    <Button
+        android:id="@+id/btn_ktm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ktm"
+        app:layout_constraintEnd_toEndOf="@+id/et_bikes"
+        app:layout_constraintStart_toStartOf="@+id/et_bikes"
+        app:layout_constraintTop_toBottomOf="@+id/et_bikes" />
+
+    <Button
+        android:id="@+id/btn_ferrari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/ferrari"
+        app:layout_constraintEnd_toEndOf="@+id/et_cars"
+        app:layout_constraintStart_toStartOf="@+id/et_cars"
+        app:layout_constraintTop_toBottomOf="@+id/et_cars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
